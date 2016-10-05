@@ -1,0 +1,78 @@
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	box-shadow: inset 0 0 0 40px rgba(255,255,255,1);
+	z-index: 20;
+	pointer-events: none;
+	.icon-link {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 40px;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		pointer-events: visible;
+		a {
+			margin: 2vh 0;
+			font-size: 15px;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			border-radius: 25px;
+			line-height: 25px;
+			color: #fff;
+			font-weight: 800;
+		}
+		a:nth-of-type(1) { color: $red; font-size: 25px; }
+		a:nth-of-type(2) { background-color: $facebook; font-size: 13px; padding: 1px 0 0 1px; }
+		a:nth-of-type(3) { background-color: $green; font-size: 15px; padding: 0px 0 0 1px; }
+		a:nth-of-type(4) { background-color: $orange; font-size: 15px; padding: 0px 0 0 1px; }
+	}
+
+	.text-link {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		pointer-events: visible;
+		a {
+			position: relative;
+			padding: 5px 15px 5px 20px;
+			margin: 0 1vh;
+			letter-spacing: 2px;
+			font-size: 13px;
+			color: rgba(0,0,0,.6);
+			font-weight: bold;
+			transition: .3s ease;
+			&:after {
+				transition: .3s ease;
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -5px;
+				width: 0;
+				margin: auto;
+		    border-style: solid;
+		    border-width: 0 7px 0px 7px;
+		    border-color: transparent transparent rgba(255,255,255,0) transparent;
+			}
+			&:hover {
+				&:after {
+			    border-width: 0 7px 8px 7px;
+			    border-color: transparent transparent #fff transparent;
+				} 
+			}
+		}
+	}
+}

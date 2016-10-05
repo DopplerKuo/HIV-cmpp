@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:og='http://ogp.me/ns#'>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>HIV｜愛玩，更應該愛自己</title>
+  <meta content="愛滋病, hiv" name="keywords">
+  <meta content="這裡有一把安全的保護傘，請盡情放逐在多采多姿的生活，並大聲的說：「我愛玩，但我更愛自己；我愛自己，我篩檢！」" name="description">
+  <meta content="HIV｜愛玩，更應該愛自己" property="og:title">
+  <meta content="HIV｜愛玩，更應該愛自己" property="og:site_name">
+  <meta content="這裡有一把安全的保護傘，請盡情放逐在多采多姿的生活，並大聲的說：「我愛玩，但我更愛自己；我愛自己，我篩檢！」" property="og:description">
+  <meta content="/assets/img/common/facebook-share-img.jpg" property="og:image">
+  <link href="/assets/img/common/favicon.png" rel="shortcut icon">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body id="index">
+  <nav id="nav"></nav>
+  <section>
+    <div class="bg"></div>
+    <div class="bg-img">
+      <img src="/assets/img/main/ch1.png" alt="">
+      <img src="/assets/img/main/ch1-chat.png" alt="">
+    </div>
+    <div class="main-content">
+      <h1 class="title">愛玩<br>更應該愛自己</h1>
+      <p class="description">
+        這裡有一把安全的保護傘<br>
+        請盡情放逐在多彩多姿的生活<br>
+        並大聲地說<br>
+        我愛玩，但我更愛自己<br>
+        我愛自己，我篩檢<br>
+      </p>
+      <div class="btn play-video">PLAY VIDEO</div>
+      <div class="btn calltoaction"><a href="game_start.html">Let's Play</a></div>
+    </div>
+  </section>
+<!--  yotuber box -->
+<div class="youtube-box">
+  <div class="img-bg-black">
+  </div>
+  <div class="youtube-position">
+    <div class="youtube-box-main">
+      <div class="youtube-box-main-169">
+        <iframe src="https://www.youtube.com/embed/dS952k_Lsfw" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div> 
+    <div onclick="fbs_click('https://www.youtube.com/watch?v=dS952k_Lsfw')" class="btn facebook-share-btn">
+      <i class="fa fa-facebook"></i>
+      SHARE
+    </div>
+  </div>
+</div>
+<!--  yotuber box END -->
+</body>
+<script src="/assets/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="/assets/js/vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="/assets/js/vendor/headroom/headroom.js"></script>
+<script src="/assets/js/vendor/headroom/jQuery.headroom.js"></script>
+<script src="/assets/js/index.js?version=3"></script>
+<script>
+  function fbs_click(u) {
+    console.log("sss")
+    t = document.title;
+    window.open (
+    'http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t),
+    'sharer','toolbar=0,status=0,width=626,height=436');
+    return false;
+  }
+</script>
+</html>

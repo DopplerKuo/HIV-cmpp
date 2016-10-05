@@ -1,0 +1,58 @@
+/* ----- youtuber-box ----- */
+.youtube-box {
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.youtube-position {
+  position: relative;
+  top: 50%;
+  transform: translate3d(0,-50%,0);
+  -webkit-transform: translate3d(0,-50%,0);
+  pointer-events: none;
+}
+@keyframes ybShow {
+    0% { opacity: 0; transform: translate3d(0,0%,0);}
+  100% { opacity: 1; transform: translate3d(0,-50%,0);}
+}
+.youtube-box .img-bg-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .55);
+  cursor: pointer;
+}
+.img-bg-black {
+  z-index: -1;
+}
+.img-bg-black img/*XX按鈕*/ {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top: 30px;
+}
+.youtube-box-main {
+  position: relative;
+  width: 95%;
+  max-width: 950px;
+  margin: auto;
+}
+.youtube-box-main-169 {
+  padding-bottom: 53%; /*撐出16:9*/
+}
+.youtube-box-main iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: visible;
+}
+/* ----- youtuber-box END ----- */

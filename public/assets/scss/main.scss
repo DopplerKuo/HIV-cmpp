@@ -1,0 +1,20 @@
+@charset "UTF-8";
+// ========= base =========
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import 'base/variables'; //變數
+@import 'base/reset'; // reset
+@import 'base/typography'; // font
+// ========= components =========
+@import "components/btn";
+@import "components/nav";
+@import "components/youtube";
+// ========= layout =========
+@import "layout/all";
+@import "layout/contact/index";
+@import "layout/game_start/index";
+@import "layout/game_start/pop-step2";
+@import "layout/game_start/pop-step3";
+@import "layout/game_start/pop-step-completed";
+body {
+	background-color: $red;
+}

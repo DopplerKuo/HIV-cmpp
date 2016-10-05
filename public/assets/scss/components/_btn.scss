@@ -1,0 +1,115 @@
+.btn {
+	cursor: pointer;
+	user-select: none;  
+}
+.play-video {
+	position: relative;
+	display: inline-block;
+	border-radius: 50px;
+	padding: 4px 35px 4px 20px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 13px;
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,1);
+	transition: .3s ease;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 8px;
+		right: 13px;
+	  border-style: solid;
+	  border-width: 5px 0 5px 8px;
+	  border-color: transparent transparent transparent #fff;
+	  transition: .3s ease;
+	}
+	&:hover {
+		background-color: #fff;
+		color: $red;
+		&:after {
+			border-color: transparent transparent transparent $red;		
+		}
+	}
+}
+.calltoaction {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	margin: auto;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 100%;
+	color: rgba(0,0,0,.7);
+	font-weight: bold;
+	letter-spacing: 1px;
+	box-shadow: 0 0 6px 0px #fff;
+	transition: .3s cubic-bezier(0.88, 0.29, 0.63, 1.61);
+	&:hover {
+		transform: scale(.94);
+		box-shadow: 0 0 16px 1px #fff;
+	}
+}
+
+.facebook-share-btn {
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin: 20px auto;
+	font-size: 13px;
+	letter-spacing: 2px;
+	background-color: #DAD9DA;
+	border-radius: 5px;
+	text-align: center;
+	color: $red;
+	box-shadow: 0 0 0 1px rgba(255,255,255,.8);
+	i {
+		font-size: 15px;
+		margin-right: 5px;
+	}
+}
+.step-btn {
+	flex: 0 0 70px;
+	width: 70px;
+	height: 70px;
+	border-radius: 40px;
+	position: relative;
+	background-image: $g-red;
+	i {
+		color: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 15px;
+		height: 15px;
+		margin: auto;
+		z-index: 10;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: relative;
+		top: 5px;
+		left: 5px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50px;
+		background-image: $g-red;
+		transform: rotate(180deg);
+		box-shadow: inset -1px -1px 10px 0 rgba(255,0,0,.5);
+	}
+}
+.orange {
+	background-image: $g-og;
+	&:after {
+		background-image: $g-og;
+		box-shadow: inset -10px -10px 30px 0 rgba(250,50,0,.3);
+	}
+}
