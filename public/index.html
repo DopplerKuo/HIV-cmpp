@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body id="index">
+  <div id="form"></div>
   <nav id="nav"></nav>
   <section>
     <div class="bg"></div>
@@ -44,10 +45,10 @@
   <div class="youtube-position">
     <div class="youtube-box-main">
       <div class="youtube-box-main-169">
-        <iframe src="https://www.youtube.com/embed/dS952k_Lsfw" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/TpXJpsXQUac" frameborder="0" allowfullscreen></iframe>
       </div>
     </div> 
-    <div onclick="fbs_click('https://www.youtube.com/watch?v=dS952k_Lsfw')" class="btn facebook-share-btn">
+    <div onclick="fbs_click('https://www.youtube.com/embed/TpXJpsXQUac')" class="btn facebook-share-btn">
       <i class="fa fa-facebook"></i>
       SHARE
     </div>
@@ -61,13 +62,12 @@
 <script src="/assets/js/vendor/headroom/jQuery.headroom.js"></script>
 <script src="/assets/js/index.js?version=3"></script>
 <script>
+  // 臉書分享，帶入 link 參數，抓網頁 title
   function fbs_click(u) {
-    console.log("sss")
     t = document.title;
     window.open (
     'http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t),
     'sharer','toolbar=0,status=0,width=626,height=436');
-    return false;
   }
 </script>
 </html>

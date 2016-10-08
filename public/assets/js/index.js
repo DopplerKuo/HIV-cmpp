@@ -1,6 +1,7 @@
 $(document).ready(function() {
 //// =================載入共用元素================== ////
   $("#nav").load('/assets/_nav.html')
+  $("#form").load('/assets/_form.html')
 
 
 
@@ -16,9 +17,17 @@ $(document).ready(function() {
 // youtube-box END
 
 	$(".ilove-btn").click(function() {
+    var target = $(this).attr("data-game")
 		$(".game").removeClass('default');
-		$(this).parent(".game").addClass('show');
+		$(".game[data-game=" + target + "]").addClass('show');
+    $(".pop-msg").delay(1200).fadeIn(300);
+    $(".pop-g").hide();
+    $(".pop-g[data-game=" + target + "]").css("display","flex");
 	});
+  $(".pop-msg").click(function(){
+    $(".pop-msg").fadeOut(300);
+    $(".pop-g").hide();
+  })
 
 	$(".goback").click(function() {
 		$(".game").removeClass('show');

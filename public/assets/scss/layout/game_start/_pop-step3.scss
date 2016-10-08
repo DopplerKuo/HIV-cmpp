@@ -8,7 +8,7 @@
 	background-color: $red;
 	color: #fff;
 	z-index: 18;
-	padding: 40px;
+	padding: 50px;
 	.close {
 		position: fixed;
 		width: 40px;
@@ -19,7 +19,6 @@
 		border-radius: 20px;
 		top: 60px;
 		right: 60px;
-		color: #CB4AA2;
 		box-shadow: 2px 3px 3px 0 rgba(0,0,0,.2)
 	}
 	.content[data-game="1"] { background-color: #CB4AA2; }
@@ -27,15 +26,26 @@
 	.content[data-game="3"] { background-color: #00C0C0; }
 	.content[data-game="4"] { background-color: #FFA002; }
 	.content {
+		overflow-y: auto;
 		display: flex;
 		display: none;
 		width: 100%;
-		min-height: 100%;
-		height: auto;
+		height: calc( 100vh - 50px );
 		padding: 5%;
 		letter-spacing: 2px;
 		justify-content: space-between;
 		align-items: flex-start;
+		&::-webkit-scrollbar {
+		    width: 5px;
+		}
+		 
+		&::-webkit-scrollbar-track {
+		  background-color: rgba(255,255,255,.3);
+		}
+		&::-webkit-scrollbar-thumb {
+		 	background-color: rgba(255,255,255,.6);
+		  border-radius: 30px;
+		}
 		.winners {
 			flex: 0 0 60%;
 			width: 60%;

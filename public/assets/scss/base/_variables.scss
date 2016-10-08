@@ -7,7 +7,7 @@ $red: #ff545a;
 $red-l: #ff9090;
 $pink: #ff73ff;
 $purple: #8c6bdd;
-$g1: linear-gradient(45deg, $red 0%, $pink 100%);
+$g1: linear-gradient(45deg, $red 20%, $pink 100%);
 $g2: linear-gradient(to right, #7842C7 0%, rgba(255,255,255,0) 50%);
 $g3: linear-gradient(to left, #00C2BF 20%, rgba(255,255,255,0) 80%);
 $g4: linear-gradient(to right, #006AC2 0%, rgba(255,255,255,0) 70%);
@@ -21,3 +21,5 @@ $p300: PingFangTC-Light, 'Noto Sans TC', sans-serif, Microsoft JhengHei;
 $p400: PingFangTC-Regular, 'Noto Sans TC', sans-serif, Microsoft JhengHei;
 $p500: PingFangTC-Medium, 'Noto Sans TC', sans-serif, Microsoft JhengHei;
 $p600: PingFangTC-Semibold, 'Noto Sans TC', sans-serif, Microsoft JhengHei;
+
+$nav: 50px;

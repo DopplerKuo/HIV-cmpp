@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
 section {
 	position: relative;
 	width: 100%;
-	padding: 40px;
+	padding: $nav;
 	.bg {
 		position: absolute;
 		z-index: -1;
@@ -16,9 +16,10 @@ section {
 		opacity: .7;
 	}
 	.main-content {
+		position: relative;
 		width: 95%;
-		max-width: 1100px;
-		min-height: calc( 100vh - 80px);
+		max-width: 1030px;
+		min-height: calc( 100vh - 100px);
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
@@ -28,6 +29,7 @@ section {
 		color: #fff;
 	}
 	h1.title {
+		margin-top: 30px;
 		flex: 0 0 auto;
 		font-size: 50px;
 		font-family: $p300;
@@ -42,7 +44,8 @@ section {
 		letter-spacing: 2px;
 		font-family: $p600;
 		font-weight: 600;
-		margin: 10px 0 30px;
+		font-size: 16px;
+		margin: 10px 0 0;
 	}
 }
 .bg-img {
