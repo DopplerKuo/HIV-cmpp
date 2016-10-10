@@ -2586,6 +2586,33 @@ section p.description {
   font-size: 14px;
 }
 
+@media screen and (max-width: 992px) {
+  #pop-step2 .content[data-game="3"] .container .form_result {
+    padding: 50px 10px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    overflow: auto;
+  }
+  #pop-step2 .content[data-game="3"] .container .form_result .upload-section {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 100%;
+  }
+  #pop-step2 .content[data-game="3"] .container .form_result .form_result_text {
+    margin-top: 20px;
+    display: none;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    text-align: center;
+  }
+  #pop-step2 .content[data-game="3"] .container .form_result .form_result_text .facebook_share_btn {
+    margin: 0 auto 20px;
+  }
+}
+
 #pop-step2 .content[data-game="3"] .container .form {
   width: 95%;
   height: 300px;
@@ -3103,9 +3130,6 @@ section p.description {
 @media screen and (max-width: 992px) {
   #pop-step-completed {
     position: fixed;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     z-index: 21;
   }
   #pop-step-completed h2 {

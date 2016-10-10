@@ -418,8 +418,7 @@
 				margin: 0 auto;
 				.upload-section {
 					flex: 0 0 200px;
-					width: 200px;
-					
+					width: 200px;		
 					.g-upload {
 						width: 100%;
 						height: auto;
@@ -504,6 +503,26 @@
 					}
 					h4 {
 						font-size: 14px;
+					}
+				}
+			}
+			@media screen and ( max-width: 992px ) {
+				.form_result {
+					padding: 50px 10px;
+					flex-wrap: wrap;
+					overflow: auto;
+					.upload-section {
+						flex: 0 0 100%;
+						width: 100%;		
+					}
+					.form_result_text {
+						margin-top: 20px;
+						display: none;
+						flex: 0 0 100%;
+						text-align: center;
+						.facebook_share_btn {
+							margin: 0 auto 20px;
+						}
 					}
 				}
 			}
