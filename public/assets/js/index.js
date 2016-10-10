@@ -1,7 +1,8 @@
 $(document).ready(function() {
 //// =================載入共用元素================== ////
   $("#nav").load('/assets/_nav.html', function(){
-    $("#nav .content").click(function() {
+    $("#nav").append('<div class=\"btn menu-btn\"></div>')
+    $("#nav .menu-btn").click(function() {
       $('#nav').toggleClass('show');
     });
   })

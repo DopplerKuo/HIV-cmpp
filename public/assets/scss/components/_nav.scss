@@ -92,13 +92,15 @@
 			background-color: #fff;
 		}
 		$menu-top: 17px;
-		.content {
-			position: relative;
-			width: 100%!important;
+		.menu-btn {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			width: 50px;
 			height: 50px;
-			margin: 0px!important;
-			overflow: hidden;
-			transition: .5s ease;
+			margin: auto;
+			pointer-events: visible;
 			&:before {
 				content: '';
 				position: absolute;
@@ -128,6 +130,14 @@
 				z-index: 1;
 				transition: .3s;
 			}
+		}
+		.content {
+			position: relative;
+			width: 100%!important;
+			height: 50px;
+			margin: 0px!important;
+			overflow: hidden;
+			transition: .5s ease;
 		}
 		.icon-link {
 			position: relative;
@@ -176,8 +186,7 @@
 		box-shadow: inset 0 0 0 9px rgba(255,255,255,0);
 		background-color: $red;
 		$menu-top: 17px;
-		.content {
-			height: 100vh;
+		.menu-btn {
 			&:before {
 				content: '';
 				box-shadow: 0 0 0 0 rgba(0,0,0,0);
@@ -188,6 +197,9 @@
 				transform-origin: 0 50%;
 				transform: rotate(-45deg);
 			}
+		}
+		.content {
+			height: 100vh;
 		}
 		.icon-link {
 			a:nth-of-type(2), a:nth-of-type(3) { 
