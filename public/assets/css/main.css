@@ -1154,9 +1154,9 @@ section p.description {
 @media screen and (max-width: 992px) {
   .select-game-box {
     height: calc( 100vh - 59px);
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 
@@ -1177,6 +1177,10 @@ section p.description {
 @media screen and (max-width: 992px) {
   .select-game-box .game {
     overflow: auto;
+    width: 100%;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 
@@ -1503,6 +1507,14 @@ section p.description {
 }
 
 @media screen and (max-width: 992px) {
+  .select-game-box .game1 {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+  }
   .select-game-box .game1.show {
     background-position: 85% 0;
   }
@@ -1542,6 +1554,14 @@ section p.description {
 }
 
 @media screen and (max-width: 992px) {
+  .select-game-box .game2 {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+  }
   .select-game-box .game2.show {
     background-position: 10% 0;
   }
@@ -1581,6 +1601,14 @@ section p.description {
 }
 
 @media screen and (max-width: 992px) {
+  .select-game-box .game3 {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+  }
   .select-game-box .game3.show {
     background-position: 90% 0;
   }
@@ -1620,6 +1648,14 @@ section p.description {
 }
 
 @media screen and (max-width: 992px) {
+  .select-game-box .game4 {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+  }
   .select-game-box .game4.show {
     background-position: 0% 0;
   }
@@ -1641,6 +1677,15 @@ section p.description {
   display: block;
 }
 
+@media screen and (max-width: 992px) {
+  .select-game-box .game.default {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    height: 25%;
+  }
+}
+
 .select-game-box .game.show {
   -webkit-flex: 1 0 25%;
       -ms-flex: 1 0 25%;
@@ -1648,12 +1693,18 @@ section p.description {
 }
 
 @media screen and (max-width: 992px) {
+  .select-game-box .game.show {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .select-game-box .game1, .select-game-box .game2, .select-game-box .game3, .select-game-box .game4 {
     width: 100%;
     background-position: 0 30%;
-  }
-  .select-game-box .game1:hover, .select-game-box .game2:hover, .select-game-box .game3:hover, .select-game-box .game4:hover {
-    background-position: 85% 0;
   }
 }
 
