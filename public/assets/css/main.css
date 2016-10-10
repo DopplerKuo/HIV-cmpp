@@ -112,7 +112,7 @@ h1, h2, h3, h4 {
 
 @media screen and (max-width: 992px) {
   .play-video {
-    width: 150px;
+    width: 190px;
     line-height: 12px;
     font-size: 12px;
     right: 0;
