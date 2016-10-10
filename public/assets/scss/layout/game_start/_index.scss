@@ -4,6 +4,10 @@
 	align-items: center;
 	height: calc( 100vh - 100px );
 	width: 100%;
+	@media screen and (max-width:992px){
+		height: calc( 100vh - 59px );
+		flex-direction: column;
+	}
 	.game {
 		transition: background-position .3s ease,
 								flex .8s ease;
@@ -13,10 +17,14 @@
 		height: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
+		@media screen and (max-width:992px){
+			overflow: auto;
+		}
 		.content {
 			display: none;
 		}
 		.ilove-btn {
+			display: none;
 			position: absolute;
 			bottom: 30px;
 			left: 0;
@@ -34,6 +42,13 @@
 			letter-spacing: 3px;
 			font-size: 15px;
 			transition: .3s ease;
+			@media screen and (max-width:992px){
+				width: 120px;
+				height: 32px;
+				line-height: 32px;
+				font-size: 13px;
+				bottom: 10px;
+			}
 			&:hover {
 				transform: translateY(2px);
 				filter: drop-shadow(0px 1px 2px rgba(0,0,0,.4));
@@ -60,11 +75,22 @@
 				  0%{ opacity: 0; transform: translateY(40px);}
 				100%{ opacity: 1; transform: translateY(0px);}
 			}
+			@media screen and (max-width:992px){
+				display: block;
+				width: 100%;
+				height: auto;
+				padding: calc( 100vh - 200px ) 0 0;
+			}
 			h2 {
 				font-size: 3.5vw;
 				line-height: 1.15;
 				font-weight: bold;
 				letter-spacing: .25vw;
+				@media screen and (max-width:992px){
+						font-size: 30px;
+						letter-spacing: 1px;
+						text-align: center;
+				}
 			}
 			.mission_hint {
 				position: relative;
@@ -88,12 +114,45 @@
 			    border-color: transparent transparent transparent #fff;
 			    transition: .3s ease;
 				}
+				@media screen and ( max-width: 992px) {
+					box-shadow: inset 0 0 0 0 rgba(255,255,255,0);
+					margin: 25px auto 0;
+					padding-left: 0;
+					text-align: center;
+					&:after {
+						border-width: 8px 5px 0 5px;
+			    	border-color: #fff transparent transparent transparent;
+			    	right: 0;
+			    	left: 0;
+			    	top: auto;
+			    	margin: auto;
+			    	width: 0;
+			    	height: 0;
+			    	bottom: -6px;
+					}
+					&:hover {
+						background-color: rgba(255,255,255,0);
+						color: #fff;
+						&:after {
+							display: none;
+						}
+					}
+				}
 				&:hover {
 					background-color: #fff;
 					color: rgba(0,0,0,.7);
+					@media screen and ( max-width: 992px ){
+						background-color: rgba(255,255,255,0);
+						color: #fff;
+					}
 					&:after {
 						border-color: transparent transparent transparent rgba(0,0,0,.7);
 					}
+				}
+			}
+			.step-flow {
+				@media screen and ( max-width: 992px ) {
+					padding: 50px 5%;
 				}
 			}
 			.step {
@@ -153,6 +212,9 @@
 		&.show .shadow {
 			background-image: $g2;
 			animation: fade .4s .8s cubic-bezier(0.25, 0.1, 0.41, 1.42) 1 both;
+			@media screen and ( max-width: 992px ) {
+				box-shadow: inset 25px 0 30px -20px rgba(0,0,0,0);
+			}
 			@keyframes fade {
 				  0%{ opacity: 0; }
 				100%{ opacity: 1; }
@@ -168,6 +230,20 @@
 			color: #d154ac;
 		}
 		&:hover { background-position: 85% 0; }
+		&.show .shadow {
+			@media screen and (max-width:992px){
+				background-image: $g2-v;
+			}
+		}
+		@media screen and (max-width:992px){
+			&.show {
+				background-position: 85% 0;
+			}
+			&:hover {
+				background-position: 85% 0;
+			}
+			.step-flow { background-image: $g2-v-r; }
+		}
 	}
 	.game2 { 
 		flex: 0 0 0;
@@ -180,6 +256,18 @@
 		&:hover { background-position: 10% 0; }
 		&.show .shadow {
 			background-image: $g3;
+			@media screen and (max-width:992px){
+				background-image: $g3-v;
+			}
+		}
+		@media screen and (max-width:992px){
+			&.show {
+				background-position: 10% 0;
+			}
+			&:hover {
+				background-position: 10% 0;
+			}
+			.step-flow { background-image: $g3-v-r; }
 		}
 	}
 	.game3 { 
@@ -193,6 +281,18 @@
 		&:hover { background-position: 95% 0; }
 		&.show .shadow {
 			background-image: $g4;
+			@media screen and (max-width:992px){
+				background-image: $g4-v;
+			}
+		}
+		@media screen and (max-width:992px){
+			&.show {
+				background-position: 90% 0;
+			}
+			&:hover {
+				background-position: 90% 0;
+			}
+			.step-flow { background-image: $g4-v-r; }
 		}
 	}
 	.game4 { 
@@ -206,13 +306,37 @@
 		&:hover { background-position: 35% 0; }
 		&.show .shadow {
 			background-image: $g5;
+			@media screen and (max-width:992px){
+				background-image: $g5-v;
+			}
+		}
+		@media screen and (max-width:992px){
+			&.show {
+				background-position: 0% 0;
+			}
+			&:hover {
+				background-position: 0% 0;
+			}
+			.step-flow { background-image: $g5-v-r; }
 		}
 	}
 	.game.default {
 		flex: 1 0 25%;
+		.ilove-btn {
+			display: block;
+		}
 	}
 	.game.show {
 		flex: 1 0 25%;
+	}
+	.game1, .game2, .game3, .game4 {
+		@media screen and (max-width:992px){
+			width: 100%;
+			background-position: 0 30%;
+			&:hover {
+				background-position: 85% 0;
+			}
+		}
 	}
 }
 
@@ -253,6 +377,11 @@
 			padding: 50px;
 			border-radius: 15px;
 			background-color: rgba(255,255,255,.05);
+			@media screen and (max-width: 992px) {
+				font-size: 13px;
+				letter-spacing: 1px;
+				padding: 15px;
+			}
 		}
 	}
 	.pop-g1 .content { box-shadow: inset 0 0 0 2px #C84BA3; }
@@ -278,7 +407,27 @@
 		  0%{ opacity: 0; transform: translateX(40px);}
 		100%{ opacity: 1; transform: translateX(0px);}
 	}
+	@media screen and ( max-width: 992px) {
+		top: 8px;
+		left: 10px;
+		font-size: 15px;
+	}
 }
 #game_start {
-		overflow-y: hidden;
+	overflow-y: hidden;
+	@media screen and ( max-width: 992px ) {
+		overflow-y: visible;
+		section {
+			height: 100%;
+			.select-game-box {
+				height: 100%;
+				.game {
+					overflow: visible;
+				}
+				.shadow {
+					height: 100%;
+				}
+			}
+		}
+	}
 }

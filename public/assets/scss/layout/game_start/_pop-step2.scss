@@ -7,6 +7,10 @@
 	left: 0;
 	z-index: 20;
 	padding: 50px;
+	@media screen and ( max-width: 992px ) {
+		padding: 50px 0 0 0;
+		background-color: rgba(0,0,0,.75);
+	}
 	.close {
 		position: fixed;
 		width: 40px;
@@ -17,7 +21,15 @@
 		border-radius: 20px;
 		top: 60px;
 		right: 60px;
-		box-shadow: 2px 3px 3px 0 rgba(0,0,0,.2)
+		box-shadow: 2px 3px 3px 0 rgba(0,0,0,.2);
+		@media screen and ( max-width: 992px ) {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+			top: 10px;
+			right: 10px;
+		}
 	}
 	.content[data-game="1"] .label { color: #CB4AA2; }
 	.content[data-game="2"] .label { color: #029C4B; }
@@ -33,7 +45,12 @@
 	.content[data-game="4"] .facebook_share_btn { color: #FFA002; }
 	.content[data-game="1"] { background-color: #CB4AA2; }
 	.content[data-game="2"] { background-color: #029C4B; }
-	.content[data-game="3"] { background-color: rgba(255,255,255,.6) }
+	.content[data-game="3"] { 
+		background-color: rgba(255,255,255,.6) ;
+		@media screen and (max-width: 992px) {
+			background-color: rgba(0,0,0,0);
+		}
+	}
 	.content[data-game="4"] { background-color: #FFA002; }
 	.content {
 		display: none;
@@ -151,6 +168,25 @@
 		}
 	}
 	.content[data-game="1"] {
+		@media screen and ( max-width: 992px ) {
+			padding: 5%;
+			.description {
+				display: block;
+			}
+			.hint {
+				flex: 0 0 100%;
+				width: 100%;
+			}
+			.logo_section {
+				width: 100%;
+				margin: 50px auto;
+				.logo {
+					width: 50px;
+					height: 50px;
+					transform: translate3d(0,0,0);
+				}
+			}
+		}
 		.mission_section {
 			margin: 30px 0;
 			display: flex;
@@ -207,11 +243,19 @@
 						font-size: 14px;
 					}
 				}
+				@media screen and ( max-width: 992px ) {
+					flex: 0 0 100%;
+					width: 100%;
+					margin: 0 0 80px 0;
+				}
 			}
 		}
 	}
 	.content[data-game="2"], .content[data-game="4"] {
 		padding: 3.5% 60px;
+		@media screen and ( max-width: 992px ) {
+			padding: 5%;
+		}
 		.facebook_share_btn {
 			width: 70%;
 		}
@@ -225,6 +269,12 @@
 			box-shadow: 1px 0 0 0 rgba(255,255,255,.3);
 			padding-right: 50px;
 			margin-right: 50px;
+			@media screen and ( max-width: 992px ){
+				width: 100%;
+				padding-right: 0;
+				margin-right: 0;
+				box-shadow: 1px 0 0 0 rgba(255,255,255,0);
+			}
 		}
 		.hint {
 			width: 100%;
@@ -241,6 +291,12 @@
 				margin: 0 0 6px 0;
 				font-size: 14px;
 			}
+			@media screen and ( max-width: 992px ) {
+				padding: 10px;
+				.text {
+					padding: 5px 10px;
+				}
+			}
 		}
 		.logo_section {
 			margin-top: 48px;
@@ -256,19 +312,35 @@
 				transform: translate3d(0,0,0);
 				border-radius: 3px;
 				box-shadow: 2px 2px 4px 0 rgba(0,0,0,.3);
+				@media screen and (max-width:992px){
+					width: 100px;
+					height: 100px;
+					right: -5px;
+				}
 			}
 			&>p {
 				width: calc( 100% - 130px);
+				@media screen and (max-width:992px){
+					width: calc( 100% - 80px);
+					font-size: 13px;
+				}
 			}
 		}
 		.upload-section {
 			float: left;
 			width: calc( 60% - 50px );
+			@media screen and (max-width: 992px) {
+				width: 100%;
+			}
 			.g-upload {
 				float: left;
 				width: 45%;
 				margin: 0 2.5%;
 				text-align: center;
+				@media screen and (max-width: 992px) {
+					width: 95%;
+					margin: 20px 2.5% 50px;
+				}
 				img {
 					width: 100%;
 				}
@@ -325,6 +397,10 @@
 			max-width: 640px;
 			height: 400px;
 			background-color: #00aef1;
+			width: 95%;
+			@media screen and ( max-width: 992px ) {
+				height: calc( 100vh - 100px );
+			}
 			.form_result {
 				display: flex;
 				display: none;
@@ -438,6 +514,10 @@
 				max-width: 570px;
 				margin: 50px auto;
 				overflow-y: auto;
+				@media screen and ( max-width: 992px ) {
+					padding: 10px;
+					height: calc( 100vh - 170px );
+				}
 				&::-webkit-scrollbar {
 		    	width: 5px;
 				}
@@ -453,6 +533,9 @@
 					text-align: center;
 					margin-bottom: 40px;
 					font-size: 16px;
+					@media screen and ( max-width: 992px ) {
+						font-size: 14px;
+					}
 				}
 				.qa-section {
 					font-size: 15px;
@@ -531,15 +614,29 @@
 			.text {
 				padding: 5px 15px;
 			}
+			@media screen and ( max-width: 992px ) {
+				padding: 10px;
+				.text {
+					padding: 5px 10px;
+				}
+			}
 		}
 		.logo_section p {
 			width: calc( 100% - 70px );
+			@media screen and (max-width: 992px) {
+				width: 100%;
+			}
 		}
 		.logo_section .logo {
 			width: 110px;
 			height: auto;
 			top: -30px;
 			box-shadow: 0 0 0 0 rgba(0,0,0,0);
+			@media screen and (max-width: 992px) {
+				width: 80px;
+				top: -35px;
+				right: -5px;
+			}
 		}
 	}
 	.upload-example {

@@ -1,6 +1,10 @@
 $(document).ready(function() {
 //// =================載入共用元素================== ////
-  $("#nav").load('/assets/_nav.html')
+  $("#nav").load('/assets/_nav.html', function(){
+    $("#nav .content").click(function() {
+      $('#nav').toggleClass('show');
+    });
+  })
   $("#form").load('/assets/_form.html')
 
 

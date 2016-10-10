@@ -12,6 +12,16 @@ $g2: linear-gradient(to right, #7842C7 0%, rgba(255,255,255,0) 50%);
 $g3: linear-gradient(to left, #00C2BF 20%, rgba(255,255,255,0) 80%);
 $g4: linear-gradient(to right, #006AC2 0%, rgba(255,255,255,0) 70%);
 $g5: linear-gradient(to left, #FFA000 30%, rgba(255,255,255,0) 60%);
+$g1-v: linear-gradient(to top, $red 20%, $pink 100%);
+$g2-v: linear-gradient(to top, #7842C7 0%, rgba(255,255,255,0) 50%);
+$g3-v: linear-gradient(to top, #00C2BF 0%, rgba(255,255,255,0) 80%);
+$g4-v: linear-gradient(to top, #006AC2 0%, rgba(255,255,255,0) 70%);
+$g5-v: linear-gradient(to top, #FFA000 0%, rgba(255,255,255,0) 60%);
+$g1-v-r: linear-gradient(to bottom, $red 20%, $pink 100%);
+$g2-v-r: linear-gradient(to bottom, #7842C7 5%, #B955AA 100%);
+$g3-v-r: linear-gradient(to bottom, #00C2BF 10%, #00A55A 100%);
+$g4-v-r: linear-gradient(to bottom, #006AC2 0%, #1EB4A5 100%);
+$g5-v-r: linear-gradient(to bottom, #FFA000 0%, #FFC700 100%);
 $g-red: linear-gradient(-45deg, #ff1a26 0%, #ff646f 100%);
 $g-og: linear-gradient(-45deg, #ff9700 0%, #ffc510 100%);
 
