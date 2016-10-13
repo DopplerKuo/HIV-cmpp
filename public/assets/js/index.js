@@ -21,7 +21,7 @@ $(document).ready(function() {
   });
 // youtube-box END
 
-	$(".ilove-btn").click(function() {
+	$(".shadow").click(function() {
     var target = $(this).attr("data-game")
 		$(".game").removeClass('default');
 		$(".game[data-game=" + target + "]").addClass('show');

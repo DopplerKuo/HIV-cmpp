@@ -1,3 +1,23 @@
+video { 
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	animation: showup 1s 1.3s ease 1 both;
+	@keyframes showup{
+		  0%{ opacity: 0; }
+		100%{ opacity: 1; }
+	}
+}
+.show video {
+	@media screen and ( min-width: 992px ) { display: block; }
+}
 .select-game-box {
 	display: flex;
 	justify-content: center;
@@ -44,6 +64,7 @@
 			letter-spacing: 3px;
 			font-size: 15px;
 			transition: .3s ease;
+			z-index: 10;
 			@media screen and (max-width:992px){
 				width: 120px;
 				height: 32px;
@@ -210,8 +231,10 @@
 			box-shadow: inset 25px 0 30px -20px rgba(0,0,0,.4);
 			opacity: 1;
 			z-index: 2;
+			pointer-events: visible;
 		}
 		&.show .shadow {
+			pointer-events: none;
 			background-image: $g2;
 			animation: fade .4s .8s cubic-bezier(0.25, 0.1, 0.41, 1.42) 1 both;
 			@media screen and ( max-width: 992px ) {
@@ -438,19 +461,34 @@
 }
 #game_start {
 	overflow-y: hidden;
-	@media screen and ( max-width: 992px ) {
-		overflow-y: visible;
-		section {
-			height: 100%;
-			.select-game-box {
-				height: 100%;
-				.game {
-					overflow: visible;
+		.text-link {
+			a {
+				&:after {
+			    border-color: transparent transparent rgba(255,255,255,0) transparent;
 				}
-				.shadow {
-					height: 100%;
+				&:hover {
+					&:after {
+				    border-color: transparent transparent $red transparent;
+					} 
 				}
 			}
 		}
+		@media screen and ( max-width: 992px ) {
+			overflow-y: visible;
+			section {
+				height: 100%;
+				.select-game-box {
+					height: 100%;
+					.game {
+						overflow: visible;
+					}
+					.shadow {
+						height: 100%;
+					}
+				}
+			}
+		}
+		.step .text p a {
+			box-shadow: inset 0 -1px 0 0 rgba(255,255,255,1);
+		} 
 	}
-}

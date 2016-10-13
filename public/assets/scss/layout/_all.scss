@@ -104,3 +104,18 @@ section {
 	background-size: 6px 3px;
 	opacity: .3;
 }
+
+#index {
+	.text-link {
+		a {
+			&:after {
+		    border-color: transparent transparent rgba(255,255,255,0) transparent;
+			}
+			&:hover {
+				&:after {
+			    border-color: transparent transparent $red transparent;
+				} 
+			}
+		}
+	}
+}

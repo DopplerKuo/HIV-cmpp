@@ -875,6 +875,14 @@ section p.description {
   opacity: .3;
 }
 
+#index .text-link a:after {
+  border-color: transparent transparent rgba(255, 255, 255, 0) transparent;
+}
+
+#index .text-link a:hover:after {
+  border-color: transparent transparent #ff545a transparent;
+}
+
 #about .text-link a:nth-of-type(1):after {
   border-width: 0 7px 8px 7px;
   border-color: transparent transparent #fff transparent;
@@ -1002,63 +1010,63 @@ section p.description {
   border-color: transparent transparent #fff transparent;
 }
 
-#about, #contact {
+#information, #about, #contact {
   background-color: #fff;
 }
 
 @media screen and (min-width: 992px) {
-  #about #nav, #contact #nav {
+  #information #nav, #about #nav, #contact #nav {
     box-shadow: inset 0 0 0 50px #ff545a;
   }
-  #about .icon-link a, #about .text-link a, #contact .icon-link a, #contact .text-link a {
+  #information .icon-link a, #information .text-link a, #about .icon-link a, #about .text-link a, #contact .icon-link a, #contact .text-link a {
     color: #fff;
   }
-  #about .icon-link a:nth-of-type(n), #contact .icon-link a:nth-of-type(n) {
+  #information .icon-link a:nth-of-type(n), #about .icon-link a:nth-of-type(n), #contact .icon-link a:nth-of-type(n) {
     background-color: transparent;
     color: #fff;
     box-shadow: inset 0 0 0 1px #fff;
     transition: .3s ease;
   }
-  #about .icon-link a:nth-of-type(n):hover, #contact .icon-link a:nth-of-type(n):hover {
+  #information .icon-link a:nth-of-type(n):hover, #about .icon-link a:nth-of-type(n):hover, #contact .icon-link a:nth-of-type(n):hover {
     background-color: #fff;
     color: #ff545a;
   }
-  #about .icon-link a:nth-of-type(1), #contact .icon-link a:nth-of-type(1) {
+  #information .icon-link a:nth-of-type(1), #about .icon-link a:nth-of-type(1), #contact .icon-link a:nth-of-type(1) {
     box-shadow: inset 0 0 0 0px #fff;
   }
-  #about .icon-link a:nth-of-type(1):hover, #contact .icon-link a:nth-of-type(1):hover {
+  #information .icon-link a:nth-of-type(1):hover, #about .icon-link a:nth-of-type(1):hover, #contact .icon-link a:nth-of-type(1):hover {
     background-color: transparent;
     color: #fff;
   }
 }
 
-#about .content, #contact .content {
+#information .content, #about .content, #contact .content {
   width: 95%;
   max-width: 1150px;
   margin: 50px auto;
   text-align: center;
 }
 
-#about .content h2, #contact .content h2 {
+#information .content h2, #about .content h2, #contact .content h2 {
   color: #ff545a;
   margin: 30px auto;
   font-size: 22px;
   letter-spacing: 1px;
 }
 
-#about .content p, #contact .content p {
+#information .content p, #about .content p, #contact .content p {
   opacity: .5;
   font-size: 18px;
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
-#about .content .organization, #contact .content .organization {
+#information .content .organization, #about .content .organization, #contact .content .organization {
   font-size: 0;
   margin: 30px auto;
 }
 
-#about .content .organization .logo-box, #contact .content .organization .logo-box {
+#information .content .organization .logo-box, #about .content .organization .logo-box, #contact .content .organization .logo-box {
   width: 30%;
   margin: 0 2.5%;
   display: inline-block;
@@ -1067,12 +1075,12 @@ section p.description {
   margin-bottom: 30px;
 }
 
-#about .content .organization .logo-box img, #contact .content .organization .logo-box img {
+#information .content .organization .logo-box img, #about .content .organization .logo-box img, #contact .content .organization .logo-box img {
   width: 80px;
   margin-bottom: 10px;
 }
 
-#about .content .organization .btn, #contact .content .organization .btn {
+#information .content .organization .btn, #about .content .organization .btn, #contact .content .organization .btn {
   width: 95%;
   max-width: 720px;
   margin: 0 auto;
@@ -1084,7 +1092,7 @@ section p.description {
   letter-spacing: 1px;
 }
 
-#about .content .organization .btn b, #contact .content .organization .btn b {
+#information .content .organization .btn b, #about .content .organization .btn b, #contact .content .organization .btn b {
   background-color: #fff;
   border-radius: 30px;
   color: #ff545a;
@@ -1099,7 +1107,7 @@ section p.description {
   text-align: center;
 }
 
-#about .content .table .t-row, #contact .content .table .t-row {
+#information .content .table .t-row, #about .content .table .t-row, #contact .content .table .t-row {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1111,7 +1119,7 @@ section p.description {
           align-items: center;
 }
 
-#about .content .table .t-row .column, #contact .content .table .t-row .column {
+#information .content .table .t-row .column, #about .content .table .t-row .column, #contact .content .table .t-row .column {
   letter-spacing: 1px;
   font-size: 17px;
   -webkit-flex: 1 0 33%;
@@ -1124,58 +1132,58 @@ section p.description {
   text-align: left;
 }
 
-#about .content .table .t-row .column:nth-of-type(3), #contact .content .table .t-row .column:nth-of-type(3) {
+#information .content .table .t-row .column:nth-of-type(3), #about .content .table .t-row .column:nth-of-type(3), #contact .content .table .t-row .column:nth-of-type(3) {
   box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.2), inset 1px 0 0 0 rgba(0, 0, 0, 0.2);
 }
 
-#about .content .table .t-row.title, #contact .content .table .t-row.title {
+#information .content .table .t-row.title, #about .content .table .t-row.title, #contact .content .table .t-row.title {
   background-color: #ff9090;
   opacity: .75;
 }
 
-#about .content .table .t-row.title .column, #contact .content .table .t-row.title .column {
+#information .content .table .t-row.title .column, #about .content .table .t-row.title .column, #contact .content .table .t-row.title .column {
   padding: 3px;
   color: #fff;
   text-align: center;
   box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.8);
 }
 
-#about .content .table .t-row.title .column:nth-of-type(1), #contact .content .table .t-row.title .column:nth-of-type(1) {
+#information .content .table .t-row.title .column:nth-of-type(1), #about .content .table .t-row.title .column:nth-of-type(1), #contact .content .table .t-row.title .column:nth-of-type(1) {
   box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 992px) {
-  #about .ch, #contact .ch {
+  #information .ch, #about .ch, #contact .ch {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  #about .ch .text, #about .ch .img, #contact .ch .text, #contact .ch .img {
+  #information .ch .text, #information .ch .img, #about .ch .text, #about .ch .img, #contact .ch .text, #contact .ch .img {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     text-align: left;
   }
-  #about .ch .text img, #about .ch .img img, #contact .ch .text img, #contact .ch .img img {
+  #information .ch .text img, #information .ch .img img, #about .ch .text img, #about .ch .img img, #contact .ch .text img, #contact .ch .img img {
     display: block;
     margin: 0 auto;
   }
-  #about .content, #contact .content {
+  #information .content, #about .content, #contact .content {
     margin: 20px auto;
     text-align: left;
   }
-  #about .content h2, #contact .content h2 {
+  #information .content h2, #about .content h2, #contact .content h2 {
     color: #ff545a;
     margin: 30px auto;
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
   }
-  #about .content p, #contact .content p {
+  #information .content p, #about .content p, #contact .content p {
     opacity: .5;
     font-size: 13px;
   }
-  #about .content .organization .logo-box, #contact .content .organization .logo-box {
+  #information .content .organization .logo-box, #about .content .organization .logo-box, #contact .content .organization .logo-box {
     width: 100%;
     margin: 5px 2.5%;
     display: inline-block;
@@ -1183,11 +1191,11 @@ section p.description {
     color: rgba(0, 0, 0, 0.56);
     margin-bottom: 30px;
   }
-  #about .content .organization .logo-box img, #contact .content .organization .logo-box img {
+  #information .content .organization .logo-box img, #about .content .organization .logo-box img, #contact .content .organization .logo-box img {
     width: 80px;
     margin-bottom: 10px;
   }
-  #about .content .organization .btn, #contact .content .organization .btn {
+  #information .content .organization .btn, #about .content .organization .btn, #contact .content .organization .btn {
     width: 95%;
     max-width: 720px;
     margin: 0 auto;
@@ -1200,7 +1208,7 @@ section p.description {
     border-radius: 10px;
     letter-spacing: 1px;
   }
-  #about .content .organization .btn b, #contact .content .organization .btn b {
+  #information .content .organization .btn b, #about .content .organization .btn b, #contact .content .organization .btn b {
     background-color: #fff;
     border-radius: 30px;
     color: #ff545a;
@@ -1214,10 +1222,10 @@ section p.description {
     line-height: 15px;
     text-align: center;
   }
-  #about .content .table .t-row.title .column:nth-of-type(n+2), #contact .content .table .t-row.title .column:nth-of-type(n+2) {
+  #information .content .table .t-row.title .column:nth-of-type(n+2), #about .content .table .t-row.title .column:nth-of-type(n+2), #contact .content .table .t-row.title .column:nth-of-type(n+2) {
     display: none;
   }
-  #about .content .table .t-row, #contact .content .table .t-row {
+  #information .content .table .t-row, #about .content .table .t-row, #contact .content .table .t-row {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1232,7 +1240,7 @@ section p.description {
             flex-wrap: wrap;
     margin-bottom: 15px;
   }
-  #about .content .table .t-row .column, #contact .content .table .t-row .column {
+  #information .content .table .t-row .column, #about .content .table .t-row .column, #contact .content .table .t-row .column {
     letter-spacing: 1px;
     font-size: 17px;
     -webkit-flex: 1 0 100%;
@@ -1244,24 +1252,206 @@ section p.description {
     color: rgba(0, 0, 0, 0.5);
     text-align: left;
   }
-  #about .content .table .t-row .column:nth-of-type(n+2), #contact .content .table .t-row .column:nth-of-type(n+2) {
+  #information .content .table .t-row .column:nth-of-type(n+2), #about .content .table .t-row .column:nth-of-type(n+2), #contact .content .table .t-row .column:nth-of-type(n+2) {
     font-size: 12px;
     padding: 15px 25px 0px;
     opacity: 1;
     box-shadow: inset 0 1px 0 0 transparent, inset 0 -1px 0 0 transparent;
   }
-  #about .content .table .t-row.title, #contact .content .table .t-row.title {
+  #information .content .table .t-row.title, #about .content .table .t-row.title, #contact .content .table .t-row.title {
     background-color: #ff9090;
     opacity: .75;
   }
-  #about .content .table .t-row.title .column, #contact .content .table .t-row.title .column {
+  #information .content .table .t-row.title .column, #about .content .table .t-row.title .column, #contact .content .table .t-row.title .column {
     padding: 3px;
     color: #fff;
     text-align: center;
     box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.8);
   }
-  #about .content .table .t-row.title .column:nth-of-type(1), #contact .content .table .t-row.title .column:nth-of-type(1) {
+  #information .content .table .t-row.title .column:nth-of-type(1), #about .content .table .t-row.title .column:nth-of-type(1), #contact .content .table .t-row.title .column:nth-of-type(1) {
     box-shadow: inset 0px 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+#information .text-link a:nth-of-type(2):after {
+  border-width: 0 7px 8px 7px;
+  border-color: transparent transparent #fff transparent;
+}
+
+#information .content {
+  max-width: 960px;
+  margin-top: 15px;
+}
+
+#information .content h2 {
+  margin-bottom: 10px;
+}
+
+#information .content p {
+  opacity: 1;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#information p b {
+  color: #ff545a;
+  font-size: 15px;
+}
+
+#information .content h3 {
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+  font-size: 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+}
+
+#information .content h3 b {
+  border-radius: 20px;
+  padding: 3px 8px;
+  box-shadow: inset 0 0 0 1px #ff545a;
+  color: #ff545a;
+  font-size: 12px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+#information .content h3 b:hover {
+  background: #ff545a;
+  color: #fff;
+}
+
+#information .information-list {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#information .information {
+  position: relative;
+  -webkit-flex: 0 0 30%;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  margin: 0.6666%;
+  height: auto;
+  color: #fff;
+  overflow: hidden;
+  font-size: 0;
+  background-color: #ff545a;
+}
+
+#information .information .img-bg {
+  transition: .3s ease;
+}
+
+#information .information .img-bg img {
+  width: 100%;
+}
+
+#information .information .btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  font-size: 12px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: auto;
+  box-shadow: inset 0 0 0 2px #fff;
+  transition: .3s ease;
+  opacity: 0;
+}
+
+#information .information .btn:hover {
+  background: #fff;
+  color: #ff545a;
+}
+
+#information .information .btn.i-download {
+  -webkit-transform: translatex(25px);
+      -ms-transform: translatex(25px);
+          transform: translatex(25px);
+}
+
+#information .information .btn.i-facebook {
+  -webkit-transform: translatex(-25px);
+      -ms-transform: translatex(-25px);
+          transform: translatex(-25px);
+}
+
+#information .information:hover .img-bg {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: .4;
+}
+
+#information .information:hover .btn {
+  opacity: 1;
+}
+
+video {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  -webkit-animation: showup 1s 1.3s ease 1 both;
+          animation: showup 1s 1.3s ease 1 both;
+}
+
+@-webkit-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .show video {
+    display: block;
   }
 }
 
@@ -1336,6 +1526,7 @@ section p.description {
   letter-spacing: 3px;
   font-size: 15px;
   transition: .3s ease;
+  z-index: 10;
 }
 
 @media screen and (max-width: 992px) {
@@ -1579,9 +1770,11 @@ section p.description {
   box-shadow: inset 25px 0 30px -20px rgba(0, 0, 0, 0.4);
   opacity: 1;
   z-index: 2;
+  pointer-events: visible;
 }
 
 .select-game-box .game.show .shadow {
+  pointer-events: none;
   background-image: linear-gradient(to right, #7842C7 0%, rgba(255, 255, 255, 0) 50%);
   -webkit-animation: fade 0.4s 0.8s cubic-bezier(0.25, 0.1, 0.41, 1.42) 1 both;
           animation: fade 0.4s 0.8s cubic-bezier(0.25, 0.1, 0.41, 1.42) 1 both;
@@ -1965,6 +2158,14 @@ section p.description {
   overflow-y: hidden;
 }
 
+#game_start .text-link a:after {
+  border-color: transparent transparent rgba(255, 255, 255, 0) transparent;
+}
+
+#game_start .text-link a:hover:after {
+  border-color: transparent transparent #ff545a transparent;
+}
+
 @media screen and (max-width: 992px) {
   #game_start {
     overflow-y: visible;
@@ -1981,6 +2182,10 @@ section p.description {
   #game_start section .select-game-box .shadow {
     height: 100%;
   }
+}
+
+#game_start .step .text p a {
+  box-shadow: inset 0 -1px 0 0 white;
 }
 
 #pop-step2 {
