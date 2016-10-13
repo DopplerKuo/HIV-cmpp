@@ -31,8 +31,8 @@
 		}
 		a:nth-of-type(1) { color: $red; font-size: 25px; }
 		a:nth-of-type(2) { background-color: $facebook; font-size: 13px; padding: 1px 0 0 1px; }
-		a:nth-of-type(3) { background-color: $green; font-size: 15px; padding: 0px 0 0 1px; }
-		a:nth-of-type(4) { background-color: $orange; font-size: 15px; padding: 0px 0 0 1px; }
+		a:nth-of-type(3) { background-color: $orange; font-size: 15px; padding: 0px 0 0 1px; }
+		a:nth-of-type(4) { background-color: $green; font-size: 15px; padding: 0px 0 0 1px; }
 	}
 
 	.text-link {
@@ -169,6 +169,7 @@
 			width: 100%;
 			height: calc( 100vh - 50px );
 			flex-direction: column;
+			pointer-events: none;
 			a {
 				margin: 0 0 2.5vh 0;
 				font-size: 20px;
@@ -208,6 +209,7 @@
 		}
 		.text-link {
 			a {
+				pointer-events: visible;
 				transform: translateY(0);
 				opacity: 1;
 			}

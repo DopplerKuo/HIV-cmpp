@@ -314,13 +314,13 @@ h1, h2, h3, h4 {
 }
 
 #nav .icon-link a:nth-of-type(3) {
-  background-color: #00b3a4;
+  background-color: #ffaa00;
   font-size: 15px;
   padding: 0px 0 0 1px;
 }
 
 #nav .icon-link a:nth-of-type(4) {
-  background-color: #ffaa00;
+  background-color: #00b3a4;
   font-size: 15px;
   padding: 0px 0 0 1px;
 }
@@ -478,6 +478,7 @@ h1, h2, h3, h4 {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    pointer-events: none;
   }
   #nav .text-link a {
     margin: 0 0 2.5vh 0;
@@ -521,6 +522,7 @@ h1, h2, h3, h4 {
     opacity: 1;
   }
   #nav.show .text-link a {
+    pointer-events: visible;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
@@ -1285,6 +1287,7 @@ section p.description {
 
 #information .content h2 {
   margin-bottom: 10px;
+  padding: 0 1%;
 }
 
 #information .content p {
@@ -1292,6 +1295,12 @@ section p.description {
   font-size: 16px;
   margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 992px) {
+  #information .content p {
+    text-align: center;
+  }
 }
 
 #information p b {
@@ -1331,6 +1340,27 @@ section p.description {
   color: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  #information .content h3 {
+    text-align: center;
+    font-size: 13px;
+    display: block;
+  }
+}
+
+#information .m-br {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #information {
+    text-align: center;
+  }
+  #information .m-br {
+    display: block;
+  }
+}
+
 #information .information-list {
   width: 100%;
   display: -webkit-flex;
@@ -1358,6 +1388,24 @@ section p.description {
   overflow: hidden;
   font-size: 0;
   background-color: #ff545a;
+}
+
+@media screen and (max-width: 992px) {
+  #information .information {
+    -webkit-flex: 0 0 48%;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+    margin: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #information .information {
+    -webkit-flex: 0 0 98%;
+        -ms-flex: 0 0 98%;
+            flex: 0 0 98%;
+    margin: 1%;
+  }
 }
 
 #information .information .img-bg {

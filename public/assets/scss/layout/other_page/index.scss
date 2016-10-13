@@ -338,12 +338,16 @@
 	}
 	.content h2 {
 		margin-bottom: 10px;
+		padding: 0 1%;
 	}
 	.content p {
 		opacity: 1;
 		font-size: 16px;
 		margin-bottom: 10px;
 		color: rgba(0,0,0,.5);
+		@media screen and (max-width: 992px) {
+			text-align: center;
+		}
 	}
 	p b {
 		color: $red;
@@ -371,6 +375,18 @@
 				color: #fff;
 			}
 		}
+		@media screen and (max-width: 992px) {
+			text-align: center;
+			font-size: 13px;
+			display: block;
+		}
+	}
+	.m-br {
+		display: none;
+	}
+	@media screen and (max-width: 768px) {
+		text-align: center;
+		.m-br { display: block; }
 	}
 	.information-list {
 		width: 100%;
@@ -388,6 +404,14 @@
 		overflow: hidden;
 		font-size: 0;
 		background-color: $red;
+		@media screen and (max-width: 992px) {
+			flex: 0 0 48%;
+			margin: 1%
+		}
+		@media screen and (max-width: 768px) {
+			flex: 0 0 98%;
+			margin: 1%
+		}
 		.img-bg {
 			transition: .3s ease;
 			img { width: 100%; }
