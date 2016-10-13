@@ -15,6 +15,19 @@ map '/game_start.html' do
     }
 end
 
+map '/information.html' do
+    run lambda { |env|
+      [
+        200,
+        {
+          'Content-Type'  => 'text/html',
+          'Cache-Control' => 'public, max-age=0'
+        },
+        File.open('public/information.html', File::RDONLY)
+      ]
+    }
+end
+
 map '/about.html' do
     run lambda { |env|
       [
